@@ -13,6 +13,9 @@ public class Main {
         System.out.println("Enter max number year for deposit");
         int k = scanner.nextInt();
 
-        System.out.println("Your contribution is equal to " + ((m*n)/100*k));
+        for (int i = 0; i < k; i++) {
+            m = (int) (m * n) / 100 + m;
+        }
+        System.out.println("Your contribution is equal to "+ m);
     }
 }
