@@ -3,10 +3,10 @@ package JavaCoreBasics.Task_2;
 public class Kolo {
     private float radius;
     private float diameter;
-    private final static double PI = 3.14;
+    private final static float PI = 3.14F;
 
     public void areaKolo() {
-        float area = (float) (PI/4 * (diameter * diameter));
+        float area = PI/4 * (diameter * diameter);
         System.out.println("Площа кола рівна " + area);
     }
 
