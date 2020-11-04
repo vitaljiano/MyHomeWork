@@ -5,6 +5,7 @@ import JavaCoreBasics.HW6.Task2.first.Numerable;
 public class MyCalculator implements Numerable {
     private int a;
     private int b;
+    private static int c;
 
     public MyCalculator(int a, int b) {
         this.a = a;
