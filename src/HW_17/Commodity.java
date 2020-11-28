@@ -2,6 +2,7 @@ package HW_17;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Scanner;
 
 public class Commodity {
     private String nameGoods;
@@ -98,6 +99,8 @@ public class Commodity {
     public static void exit() {
         System.exit(0);
     }
+
+
 
     @Override
     public String toString() {

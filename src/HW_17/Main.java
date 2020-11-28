@@ -33,71 +33,34 @@ public class Main {
 
             switch (scanner1.nextLine()) {
                 case "1":
-                    Scanner goods = new Scanner(System.in);
-                    System.out.println("Назва товару:");
-                    String nameG = goods.nextLine();
-                    System.out.println("Ширина товару: ");
-                    int width = goods.nextInt();
-                    System.out.println("Довжина товару:");
-                    int length = goods.nextInt();
-                    System.out.println("Вага товару:");
-                    float weight = goods.nextFloat();
-                    Commodity.addGoods(nameG, width, length, weight);
-                    System.out.println("Товар успішно доданий");
-                    System.out.println("Виберіть наступну дію");
+                   Case.case1();
                     break;
                 case "2":
-                    Scanner delete = new Scanner(System.in);
-                    System.out.println("Введіть номер позиції товару, що потрібно видалити:");
-                    Commodity.deleteGoods(delete.nextInt());
-                    System.out.println("Товар успішно видалено");
-                    System.out.println("Виберіть наступну дію");
+                    Case.case2();
                     break;
                 case "3":
-                    Scanner replace = new Scanner(System.in);
-                    System.out.println("Введіть номер позиції обєкта, що потребує заміни");
-                    Commodity.replaceGoods(replace.nextInt(), new Commodity("Default", 10,
-                            10, 10.0f));
-                    System.out.println("Виберіть наступну дію");
+                    Case.case3();
                     break;
                 case "4":
-                    System.out.println("Список відсортовано за назвою");
-                    Commodity.sortByName();
-                    System.out.println("Виберіть наступну дію");
+                    Case.case4();
                     break;
                 case "5":
-                    System.out.println("Список відсортовано за довжиною");
-                    Commodity.sortByLength();
-                    System.out.println("Виберіть наступну дію");
+                    Case.case5();
                     break;
                 case "6":
-                    System.out.println("Список відсортовано за шириною");
-                    Commodity.sortByWeight();
-                    System.out.println("Виберіть наступну дію");
+                    Case.case6();
                     break;
                 case "7":
-                    System.out.println("Список відсортовано за вагою");
-                    Commodity.sortByWidth();
-                    System.out.println("Виберіть наступну дію");
+                    Case.case7();
                     break;
                 case "8":
-                    Scanner getPosition = new Scanner(System.in);
-                    try {
-                        System.out.println("Введіть номер позиції товару");
-                        Commodity.getElementFromList(getPosition.nextInt());
-                        System.out.println("Виберіть наступну дію");
-                    } catch (Exception exception) {
-                        System.out.println("Ви ввели дані, що не відповідають номеру позиції товару");
-                        System.out.println("Виберіть наступну дію");
-                    }
+                    Case.case8();
                     break;
                 case "9":
-                    System.out.println("Список Ваших товарів");
-                    Commodity.showList();
-                    System.out.println("Виберіть наступну дію");
+                    Case.case9();
                     break;
                 case "0":
-                    Commodity.exit();
+                    Case.case0();
                     break;
                 default:
                     System.out.println("Ви ввели не коректні дані!");
